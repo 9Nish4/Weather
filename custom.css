@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 500px;
+    background-image: url("bgimage.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.container{
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    
+}
+#weathercard{
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #58585898;
+    width: 30rem;
+    height: 25rem;
+    text-align: center;
+    backdrop-filter: saturate(180%) blur(20px);
+    border-radius:  15px;
+    box-shadow: 5px 5px 25px 5px rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+    padding: 10%;
+}
+h1{
+    font-size: ;
+}
+form, #weatherDetails{
+    padding-top: 10%;
+}
+input, button{
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px solid rgba(192, 192, 192, 0.3);
+}
+button{
+    background-color: rgba(192, 192, 192, 0.3);
+    
+    color: white;
+    transition: 1s;
+}
+button:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+#weatherDetails div{
+    padding-top: 5%;
+}
+#city{
+    font-size: 0.8rem;
+}
+#temprature{
+    font-size: 2rem;
+}
+#weatherType{
+    font-size: 1rem;
+}
+@media only screen and (max-width: 1110px){
+    .container {
+        position: fixed;
+        top: 25%;
+        left: 20%;
+    }
+  }
+  @media only screen and (max-width: 760px){
+    .container {
+        position: fixed;
+        top: 25%;
+        left: 15%;
+    }
+  }
+  @media only screen and (max-width: 650px){
+    .container {
+        position: fixed;
+        top: 25%;
+        left: 15%;
+    }
+    #weathercard{
+        width: 25rem;
+    height: 25rem;
+    }
+  }
+  @media only screen and (max-width: 550px){
+    .container {
+        position: fixed;
+        top: 25%;
+        left: 15%;
+    }
+    #weathercard{
+        width: 20rem;
+    height: 25rem;
+    }
+  }
+  @media only screen and (max-width: 450px){
+    .container {
+        position: fixed;
+        top: 25%;
+        left: 10%;
+    }
+    #weathercard{
+        width: 20rem;
+    height: 25rem;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .container {
+        position: fixed;
+        top: 25%;
+        left: 10%;
+    }
+    #btn{
+        margin-top: 10%;
+    }
+    #weatherDetails{
+        padding: 15% 0%;
+
+    }
+    #weatherDetais div{
+        padding: 8% 0%;
+    }
+    #weathercard{
+        width: 18rem;
+    height: 25rem;
+    }
+  }
